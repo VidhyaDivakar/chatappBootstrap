@@ -5,6 +5,9 @@
     min-height: 100vh;
 }
 
+.appBG {
+  background-color: hsl(270, 20%, 96%) !important;
+}
 /* .bgText {
     width: 100%;
     height: 100%;
