@@ -6,8 +6,13 @@
 }
 
 .appBG {
-  background-color: hsl(270, 20%, 96%) !important;
+    background-color: hsl(270, 20%, 96%) !important;
 }
+
+.avatarBorder {
+    border: 2px solid white;
+}
+
 /* .bgText {
     width: 100%;
     height: 100%;
