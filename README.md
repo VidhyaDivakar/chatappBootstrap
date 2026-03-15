@@ -1,107 +1,75 @@
-# Frontend Mentor - Chat app CSS illustration
+# Frontend Mentor - Chat app CSS illustration solution
 
-![Design preview for the Chat app CSS illustration coding challenge](preview.jpg)
+This is a solution to the [Chat app CSS illustration challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+  - [AI Collaboration](#ai-collaboration)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Project Overview
 
-**To do this challenge, you need a strong understanding of HTML and CSS.**
+This project is based on the Chat App Bootstrap Illustration challenge from Frontend Mentor. The design represents a simple chat interface that allows users to communicate with a dog walker and schedule walking sessions for their dogs. The Chat APP UI shows a mobile chat screen with a conversation between the user and the dog walker. It includes profile information, chat, and booking options for dog walks.
 
-## The challenge
+Challenge link:
+<https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY>
 
-Your challenge is to build out this feature illustration using HTML & CSS and get it looking as close to the design as possible.
+The goal of this project  to practice building a responsive layout using HTML, CSS, and Bootstrap, while focusing on positioning, grids, flex layouts, and responsive design.
 
-The only assets we provide in this challenge are the image of the person in the app UI and the 3 images of the dog. You need to create everything else using HTML & CSS!
+### Screenshot
 
-Your users should be able to:
+## Approach and Implementation
 
-- View the optimal layout for the component depending on their device's screen size
-- **Bonus**: See the chat interface animate on the initial load
+The layout was built using Bootstrap’s grid system and utility classes. The page has a background image and is divided into two main sections: Left side: The chat app interface displayed inside a card layout. Right side: The text section describing the service (“Simple Booking”).
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+Bootstrap classes such as container, row, col-md-6, and d-flex were used to structure and align the layout. In certain places like customized webpage background color, app background, gradients background elements and navbar avatar border, instead of bootstrap regular CSS is used. Bootstrap utility classes were used where possible to maintain consistency with the framework. The layout utilities are container, row, col-12, col-md-6, few of the flex box unitlities d-flex, flex-column, justify-content-center, justify-content-between, align-items-center. The other utilities used are spacing utilities(p-2, p-3 etc), Position Utilites, borders and radius, text utilites (text-center, text-muted etc.,) and also h-100, min-vh-100.
 
-## Where to find everything
+Responsive Design
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+The layout adjusts across screen sizes using Bootstrap’s responsive column classes: col-12 for mobile (stacked layout), col-md-6 for tablet and desktop (two-column layout).
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+What I Learned
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Through this project, I practiced building responsive layouts using Bootstrap grid and utility classes**. I learned how to structure the layout properly using `container`, `row`, and `col` so that elements align correctly across screen sizes. I also practiced using flex utilities such as `d-flex`, `align-items-center`, and `justify-content-between` to control alignment and spacing without writing much custom CSS.
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+Another key learning was **positioning elements using `position-relative` and `position-absolute`** to create the overlay chat header on top of the card.
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+This project also helped me understand how to combine Bootstrap utilities with custom CSS when more precise styling was required, such as gradients, avatar borders, and chat UI details.
 
-## Using AI coding assistants
+## Acknowledgments
 
-We've included two files to help you if you're using AI coding assistants (like Claude, GitHub Copilot, Cursor, etc.) while working on this challenge:
+## Challenges Faced
 
-- `AGENTS.md` - Contains detailed instructions for AI assistants on how to help you with this challenge. It's tailored to this challenge's difficulty level, so the AI will provide guidance appropriate to your learning stage—offering more support for beginner challenges and encouraging more independence on advanced ones.
-- `CLAUDE.md` - A pointer file that directs Claude-based tools to the AGENTS.md instructions.
+During development, a few layout challenges were encountered.
 
-**How to use them:** You don't need to do anything! These files are automatically detected by most AI coding tools. The AI will read them and adjust its behavior to be a better learning partner—guiding you toward solutions rather than just giving you the answers.
+1. Bootstrap Grid Structure
+   At first, some columns were placed outside the row container, which caused elements to appear below each other instead of side-by-side. This was resolved by ensuring all .col-* elements were placed inside the same .row.
+2. Overlay Card Positioning
+   The chat header needed to overlay on top of the chat card. This required using position-relative on the card container and position-absolute for the overlay element.
+3. Spacing and Alignment
+   Aligning the chevron, avatar, user name, and status text inside the overlay required using flex utilities such as: d-flex, align-items-center, justify-content-between,
+   margin and padding utilities
+4. Avatar Border Styling
+   Bootstrap’s default border utilities did not allow easy control of border width, so a custom class was used to apply a white border around the profile image.
 
-**Note:** These files are designed to help you *learn*, not to do the work for you. The AI is instructed to ask questions, give hints, and explain concepts rather than writing complete solutions.
+## Reflections
 
-## Building your project
+## ### Challenges and Improvements
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+During this project, one of the main challenges was structuring the layout correctly using the Bootstrap grid system. Initially, some column elements were placed outside the `row` container, which caused the card and the text content to appear one below the other instead of side by side. This was resolved by restructuring the layout so that both columns were placed inside the same `row`.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+Another challenge was positioning the overlay chat header on top of the chat card. The header needed to stay attached to the top of the card without creating a gap. This required understanding how to combine `position-relative` on the parent container with `position-absolute` on the overlay element. Adjusting spacing inside the overlay using padding and flex utilities also required some experimentation.
 
-## Deploying your project
+Aligning the avatar, chevron icon, user name, and status text within a limited space was another small challenge. This was addressed by using Bootstrap flex utilities such as `d-flex`, `align-items-center`, and margin spacing utilities.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our [&#34;Complete guide to submitting solutions&#34;](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email <hi@frontendmentor.io>.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-
-Image Background:
-
-<https://www.youtube.com/watch?v=W87XNjvXiWw>
+If given more time, I would improve the project by refining the chat interface design further, adding more realistic chat message components, and improving accessibility. I would also reduce the amount of inline styling and move more styling into reusable CSS classes for better maintainability.
