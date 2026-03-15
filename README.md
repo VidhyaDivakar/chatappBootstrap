@@ -22,7 +22,7 @@ This is a solution to the [Chat app CSS illustration challenge on Frontend Mento
 This project is based on the Chat App Bootstrap Illustration challenge from Frontend Mentor. The design represents a simple chat interface that allows users to communicate with a dog walker and schedule walking sessions for their dogs. The Chat APP UI shows a mobile chat screen with a conversation between the user and the dog walker. It includes profile information, chat, and booking options for dog walks.
 
 Challenge link:
-<https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY>
+[https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY](https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY)
 
 The goal of this project  to practice building a responsive layout using HTML, CSS, and Bootstrap, while focusing on positioning, grids, flex layouts, and responsive design.
 
@@ -47,6 +47,8 @@ Another key learning was **positioning elements using `position-relative` and `p
 This project also helped me understand how to combine Bootstrap utilities with custom CSS when more precise styling was required, such as gradients, avatar borders, and chat UI details.
 
 ## Acknowledgments
+
+https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded
 
 ## Challenges Faced
 

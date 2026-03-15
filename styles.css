@@ -13,6 +13,26 @@
     border: 2px solid white;
 }
 
+.receivedChat {
+    font-weight:500;
+    border-radius: 0.7rem;
+    border-bottom-left-radius:0.2rem;
+}
+
+/* This is used for a diffrent chat with pointed triangle on left side
+.receivedChat::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right:8px solid hsl(276, 13%, 92%);
+}
+
+
 /* .bgText {
     width: 100%;
     height: 100%;
