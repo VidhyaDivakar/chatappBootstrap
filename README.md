@@ -28,6 +28,8 @@ The goal of this project  to practice building a responsive layout using HTML, C
 
 ### Screenshot
 
+![ChatAppPreview](chatPreview.jpg)
+
 ## Approach and Implementation
 
 The layout was built using Bootstrap’s grid system and utility classes. The page has a background image and is divided into two main sections: Left side: The chat app interface displayed inside a card layout. Right side: The text section describing the service (“Simple Booking”).
@@ -48,7 +50,7 @@ This project also helped me understand how to combine Bootstrap utilities with c
 
 ## Acknowledgments
 
-https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded
+<https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded>
 
 ## Challenges Faced
 
