@@ -25,6 +25,13 @@
     border-bottom-right-radius:0.2rem;
 }
 
+.pbutton {
+    font-weight:500;
+    border-radius: 0.7rem;
+    border-bottom-left-radius:0.2rem;
+}
+
+
 /* This is used for a diffrent chat with pointed triangle on left side
 .receivedChat::before {
     content: "";
