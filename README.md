@@ -34,11 +34,11 @@ The layout was built using Bootstrap’s grid system and utility classes. The pa
 
 Bootstrap classes such as container, row, col-md-6, and d-flex were used to structure and align the layout. In certain places like customized webpage background color, app background, gradients background elements and navbar avatar border, instead of bootstrap regular CSS is used. Bootstrap utility classes were used where possible to maintain consistency with the framework. The layout utilities are container, row, col-12, col-md-6, few of the flex box unitlities d-flex, flex-column, justify-content-center, justify-content-between, align-items-center. The other utilities used are spacing utilities(p-2, p-3 etc), Position Utilites, borders and radius, text utilites (text-center, text-muted etc.,) and also h-100, min-vh-100.
 
-Responsive Design
+## Responsive Design
 
 The layout adjusts across screen sizes using Bootstrap’s responsive column classes: col-12 for mobile (stacked layout), col-md-6 for tablet and desktop (two-column layout).
 
-What I Learned
+## What I Learned
 
 Through this project, I practiced building responsive layouts using Bootstrap grid and utility classes**. I learned how to structure the layout properly using `container`, `row`, and `col` so that elements align correctly across screen sizes. I also practiced using flex utilities such as `d-flex`, `align-items-center`, and `justify-content-between` to control alignment and spacing without writing much custom CSS.
 
@@ -59,19 +59,23 @@ During development, a few layout challenges were encountered.
 2. Overlay Card Positioning
    The chat header needed to overlay on top of the chat card. This required using position-relative on the card container and position-absolute for the overlay element.
 3. Spacing and Alignment
-   Aligning the chevron, avatar, user name, and status text inside the overlay required using flex utilities such as: d-flex, align-items-center, justify-content-between,
-   margin and padding utilities
-4. Avatar Border Styling
-   Bootstrap’s default border utilities did not allow easy control of border width, so a custom class was used to apply a white border around the profile image.
+   Aligning the chevron, avatar, user name, and status text inside the overlay required using flex utilities such as: d-flex, align-items-center, justify-content-between, margin and padding utilities
+4. Placing the Chat UI to the right of the screen
 
 ## Reflections
 
-## ### Challenges and Improvements
+### Challenges
 
-During this project, one of the main challenges was structuring the layout correctly using the Bootstrap grid system. Initially, some column elements were placed outside the `row` container, which caused the card and the text content to appear one below the other instead of side by side. This was resolved by restructuring the layout so that both columns were placed inside the same `row`.
+Challenge 1: During this project, one of the main challenges was structuring the layout correctly using the Bootstrap grid system. Initially, some column elements were placed outside the `row` container, which caused the card and the text content to appear one below the other instead of side by side.
 
-Another challenge was positioning the overlay chat header on top of the chat card. The header needed to stay attached to the top of the card without creating a gap. This required understanding how to combine `position-relative` on the parent container with `position-absolute` on the overlay element. Adjusting spacing inside the overlay using padding and flex utilities also required some experimentation.
+Solution: This was resolved by restructuring the layout so that both columns were placed inside the same `row`.
 
-Aligning the avatar, chevron icon, user name, and status text within a limited space was another small challenge. This was addressed by using Bootstrap flex utilities such as `d-flex`, `align-items-center`, and margin spacing utilities.
+Challenge 2: Positioning the overlay chat purple header on top of the chat card. The header needed to stay attached to the top of the card without creating a gap.
+
+Solution: This challenge required understanding how to combine `position-relative` on the parent container with `position-absolute` on the overlay element. Used trial and erroa method adjusting spacing inside the overlay using padding and flex utilities.
+
+Challege 3: The Chat UI was sticking to the left side of the screen. Used `justify-content-end mb-4 pe-5`. It is still working. Need to figure it out.
+
+### Improvements if time permits
 
 If given more time, I would improve the project by refining the chat interface design further, adding more realistic chat message components, and improving accessibility. I would also reduce the amount of inline styling and move more styling into reusable CSS classes for better maintainability.
