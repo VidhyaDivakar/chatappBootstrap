@@ -50,7 +50,7 @@ This project also helped me understand how to combine Bootstrap utilities with c
 
 ## Acknowledgments
 
-<https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded>
+[https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded](https://stackoverflow.com/questions/65478047/make-a-rounded-bootstrap-container-or-image-more-rounded-i-e-increase-rounded)
 
 ## Challenges Faced
 
@@ -76,7 +76,10 @@ Challenge 2: Positioning the overlay chat purple header on top of the chat card.
 
 Solution: This challenge required understanding how to combine `position-relative` on the parent container with `position-absolute` on the overlay element. Used trial and erroa method adjusting spacing inside the overlay using padding and flex utilities.
 
-Challege 3: The Chat UI was sticking to the left side of the screen. Used `justify-content-end mb-4 pe-5`. It is still working. Need to figure it out.
+Challege 3: The Chat UI was sticking to the left side of the screen. Used `justify-content-end mb-4 pe-5`. It is still working.
+Solution: I tired the trial and error method. I used `justify-content-center`  at the container level and not at the card level. It worked.
+
+
 
 ### Improvements if time permits
 
